@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-satoshi text-dark bg-white overflow-x-hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-syne font-bold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block px-10 py-4 rounded-full font-satoshi font-semibold transition-all duration-300 text-center;
+  }
+  .btn-primary {
+    @apply bg-orange text-white hover:bg-orange/90 hover:scale-105;
+  }
+  .btn-secondary {
+    @apply bg-transparent border-2 border-orange text-orange hover:bg-orange hover:text-white;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center;
+  }
+  .section-padding {
+    @apply py-20 lg:py-28;
+  }
+}
+
+/* Custom Utilities / CSS Only Animations */
+.marquee-wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+
+.marquee-content {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 100%;
+}
+
+.marquee-left .marquee-content {
+  animation: scroll-left 30s linear infinite;
+}
+
+.marquee-right .marquee-content {
+  animation: scroll-right 30s linear infinite;
+}
+
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
