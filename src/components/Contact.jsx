@@ -41,11 +41,11 @@ const Contact = () => {
               Have a project in mind? Let's create something amazing together.
             </p>
 
-            <a href="mailto:artiqubesolutions@gmail.com" className="inline-flex items-center text-xl md:text-2xl font-syne font-bold text-navy hover:text-orange transition-colors duration-300 mb-12 group">
+            <a href="mailto:info@artiqubesolutions.com" className="inline-flex items-center text-xl md:text-2xl font-syne font-bold text-navy hover:text-orange transition-colors duration-300 mb-12 group">
               <span className="text-orange mr-4 group-hover:-translate-y-1 transition-transform duration-300">
                 <FontAwesomeIcon icon={faEnvelope} />
               </span>
-              artiqubesolutions@gmail.com
+              info@artiqubesolutions.com
             </a>
 
             <div className="flex gap-4">

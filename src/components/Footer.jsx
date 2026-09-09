@@ -23,8 +23,8 @@ const Footer = () => {
 
           {/* LEFT: Contact Info */}
           <div className="flex flex-col md:flex-row gap-1 md:gap-4 items-center md:items-start text-sm md:text-base">
-            <a href="mailto:artiqubesolutions@gmail.com" className="font-syne font-bold hover:text-orange transition-colors duration-300">
-              artiqubesolutions@gmail.com
+            <a href="mailto:info@artiqubesolutions.com" className="font-syne font-bold hover:text-orange transition-colors duration-300">
+              info@artiqubesolutions.com
             </a>
             <span className="hidden md:inline text-slate-600">|</span>
             <a href="tel:+923204456666" className="font-syne font-bold hover:text-orange transition-colors duration-300">
